@@ -5,22 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e924bee-6ffc-4c3f-a38f-51362e7e38c1" name="Changes" comment="Commit 1">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/character/Character.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/character/Dice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/character/Stats.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/factory/DruidFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/factory/FighterFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/factory/RaceAbstractFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/race/CharacterRace.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/race/Druid.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/race/Fighter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Demo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/character/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/character/Character.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/character/Stats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/character/Stats.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/factory/DruidFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/HumanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/factory/FighterFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/DragonbornFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/race/CharacterRace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/race/CharacterRace.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/race/Druid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/race/Human.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/race/Fighter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/race/Dragonborn.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +56,14 @@
       <option name="presentableId" value="Default" />
       <updated>1666562542209</updated>
     </task>
+    <task id="LOCAL-00001" summary="Commit 1">
+      <created>1666822160642</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1666822160642</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

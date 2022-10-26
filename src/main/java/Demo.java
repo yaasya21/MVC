@@ -1,18 +1,18 @@
 import character.Character;
-import factory.DruidFactory;
-import factory.FighterFactory;
+import factory.HumanFactory;
+import factory.DragonbornFactory;
 import factory.RaceAbstractFactory;
 
 public class Demo {
     public static void main(String[] args) {
-        RaceAbstractFactory druid = new DruidFactory();
-        Character user1 = new Character("DruidDruidich", druid.create());
+        RaceAbstractFactory human = new HumanFactory();
+        Character user1 = new Character("Zelenskiy", human.create());
         user1.talk();
 
         System.out.println();
 
-        RaceAbstractFactory fighter = new FighterFactory();
-        Character user2 = new Character("Fighter for freedom", fighter.create());
+        RaceAbstractFactory dragonborn = new DragonbornFactory();
+        Character user2 = new Character("Dovah-Kiin", dragonborn.create());
         user2.talk();
     }
 }

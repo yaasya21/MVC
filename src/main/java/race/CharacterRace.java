@@ -1,26 +1,13 @@
 package race;
 
-import java.util.List;
+import character.Stats;
 
 public abstract class CharacterRace {
     protected String name;
-    protected int health;
+    protected Stats bonuses;
 
-    public int getHealth() {
-        return health;
-    }
+    public abstract void print();
+    public abstract Stats getRaceBonuses();
+    public abstract void saySMTH();
 
-    public String getName() {
-        return name;
-    }
-
-    @Override
-    public String toString() {
-        return "CharacterRace{" +
-                "name='" + name + '\'' +
-                ", health=" + health +
-                '}';
-    }
-
-    public abstract void printMagika();
 }
