@@ -1,18 +1,48 @@
+import Visitor.DataElement;
+import Visitor.ElementVisitor;
 import character.Character;
-import factory.HumanFactory;
-import factory.DragonbornFactory;
-import factory.RaceAbstractFactory;
+import classdnd.Druid;
+import classdnd.Fighter;
+import org.json.simple.JSONObject;
+import race.Dragonborn;
+import race.Human;
+
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Demo {
-    public static void main(String[] args) {
-        RaceAbstractFactory human = new HumanFactory();
-        Character user1 = new Character("Zelenskiy", human.create());
-        user1.talk();
+    public static void main(String[] args) throws IOException {
+        ElementVisitor visitor = new ElementVisitor();
+        JSONObject jsonObject = new JSONObject();
+        FileWriter file = new FileWriter("output.json");
 
-        System.out.println();
+        Character user1 = new Character("Druid Druidich", new Dragonborn(), new Druid());
 
-        RaceAbstractFactory dragonborn = new DragonbornFactory();
-        Character user2 = new Character("Dovah-Kiin", dragonborn.create());
-        user2.talk();
+        List<DataElement> list = new ArrayList<>();
+        list.add(user1);
+        list.add(user1.getClas());
+        list.add(user1.getRace());
+        list.add(user1.getAttributes());
+        for(DataElement elem:list) {
+            jsonObject.putAll(elem.accept((visitor)));
+        }
+        file.write("[");
+        file.write(jsonObject.toJSONString());
+        list.clear();
+
+        Character user2 = new Character("Fighter for fridom", new Human(), new Fighter());
+        list.add(user2);
+        list.add(user2.getClas());
+        list.add(user2.getRace());
+        list.add(user2.getAttributes());
+        for(DataElement elem:list) {
+            jsonObject.putAll(elem.accept((visitor)));
+        }
+        file.write(",");
+        file.write(jsonObject.toJSONString());
+        file.write("]");
+        file.close();
     }
 }

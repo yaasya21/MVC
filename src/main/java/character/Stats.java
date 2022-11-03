@@ -1,11 +1,14 @@
 package character;
 
+import Visitor.DataElement;
+import Visitor.DataElementVisitor;
 import race.CharacterRace;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
-public class Stats {
+public class Stats implements DataElement {
 
     private Map<String, Integer> stats;
 
@@ -51,4 +54,13 @@ public class Stats {
     public Map<String, Integer> getStats() {
         return stats;
     }
+
+    public Integer getConstitution() {
+        return stats.get("constitution");
+    }
+    @Override
+    public TreeMap accept(DataElementVisitor vis) {
+        return vis.visit((this));
+    }
+
 }

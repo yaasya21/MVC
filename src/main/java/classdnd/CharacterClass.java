@@ -1,25 +1,31 @@
-package race;
+package classdnd;
 
 import Visitor.DataElement;
 import Visitor.DataElementVisitor;
-import character.Stats;
 
 import java.util.TreeMap;
 
-public abstract class CharacterRace implements DataElement {
+public abstract class CharacterClass implements DataElement {
     protected String name;
-    protected Stats bonuses;
+    protected int hp;
 
-    public abstract void print();
-    public abstract Stats getRaceBonuses();
-    public abstract void saySMTH();
+    public int getHP() {
+        return hp;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+
     @Override
     public String toString() {
         return name;
     }
+
+    public abstract void printMagika();
     @Override
     public TreeMap accept(DataElementVisitor vis) {
         return vis.visit((this));
     }
-
 }
