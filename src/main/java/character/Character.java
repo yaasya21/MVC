@@ -1,5 +1,6 @@
 package character;
 
+import Memento.MementoPattern;
 import Visitor.DataElement;
 import Visitor.DataElementVisitor;
 import classdnd.CharacterClass;
@@ -15,6 +16,10 @@ public class Character implements DataElement {
     private Stats attributes;
     private int hp;
 
+
+    public void setAttributes(Stats attributes) {
+        this.attributes = attributes;
+    }
 
     public CharacterClass getClas() {
         return clas;
@@ -54,5 +59,10 @@ public class Character implements DataElement {
     @Override
     public TreeMap accept(DataElementVisitor vis) {
         return vis.visit((this));
+    }
+
+    public void getSateFromMemento(MementoPattern memento) {
+        Stats mementoState = memento.getStats();
+        this.attributes = mementoState;
     }
 }

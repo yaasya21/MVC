@@ -1,3 +1,5 @@
+package GUI;
+
 import Visitor.DataElement;
 import Visitor.ElementVisitor;
 import character.Character;
@@ -14,7 +16,7 @@ import java.util.List;
 
 public class Demo {
     public static void main(String[] args) throws IOException {
-        ElementVisitor visitor = new ElementVisitor();
+        /*ElementVisitor visitor = new ElementVisitor();
         JSONObject jsonObject = new JSONObject();
         FileWriter file = new FileWriter("output.json");
 
@@ -43,6 +45,7 @@ public class Demo {
         file.write(",");
         file.write(jsonObject.toJSONString());
         file.write("]");
-        file.close();
+        file.close();*/
     }
 }
+

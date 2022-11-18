@@ -1,5 +1,6 @@
 package character;
 
+import Memento.MementoPattern;
 import Visitor.DataElement;
 import Visitor.DataElementVisitor;
 import race.CharacterRace;
@@ -61,6 +62,15 @@ public class Stats implements DataElement {
     @Override
     public TreeMap accept(DataElementVisitor vis) {
         return vis.visit((this));
+    }
+
+    public MementoPattern saveStateToMemento() {
+        return new MementoPattern(stats);
+    }
+
+    public void getSateFromMemento(MementoPattern memento) {
+        Stats mementoState = memento.getStats();
+        this.stats = mementoState.stats;
     }
 
 }
