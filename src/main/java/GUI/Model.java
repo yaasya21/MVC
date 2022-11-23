@@ -11,6 +11,7 @@ import org.json.simple.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.TreeMap;
 
 public class Model {
@@ -18,13 +19,14 @@ public class Model {
         return inst;
     }
     protected static Model inst=new Model();
-    protected ArrayList<Character> items=new ArrayList<Character>();
+    protected ArrayList<Character> items = new ArrayList<Character>();
     protected Stats stat;
-    protected CareTaker caretaker;
+    protected Map<String, Integer> stats;
+    protected CareTaker caretaker = new CareTaker();
     protected Character cha = null;
-    protected ElementVisitor visitor=new ElementVisitor();
+    protected ElementVisitor visitor = new ElementVisitor();
     protected JSONObject jsonObject = new JSONObject();
-    protected JSONArray jarray=new JSONArray();
+    protected JSONArray jarray = new JSONArray();
 
     public List<Character> getItems() {
         return items;
@@ -33,7 +35,7 @@ public class Model {
         return jarray;
     }
 
-    public void add2Jarray(JSONObject job) {
+    public void addToJarray(JSONObject job) {
         this.jarray.add(job);
     }
 
@@ -46,12 +48,12 @@ public class Model {
         this.stat = stat;
     }
 
-    public  CareTaker getCaretaker() {
-        return caretaker;
+    public void setStats(Map<String, Integer> stats) {
+        this.stats = stats;
     }
 
-    public void setCaretaker(CareTaker caretaker) {
-        this.caretaker = caretaker;
+    public  CareTaker getCaretaker() {
+        return caretaker;
     }
 
     public  Character getCha() {
@@ -62,9 +64,6 @@ public class Model {
         return visitor;
     }
 
-    public  void setVisitor(ElementVisitor visitor) {
-        this.visitor = visitor;
-    }
 
     public JSONObject getJsonObject() {
         return jsonObject;
@@ -75,7 +74,7 @@ public class Model {
 
     }
 
-    void setCha(String name, String cla, String race) {
+    void setCha(String name, String race, String cla) {
         this.cha = new Character(name, RaceFactory.getRace(race), ClassFactory.getClass(cla));
     }
 

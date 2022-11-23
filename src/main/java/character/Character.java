@@ -65,4 +65,13 @@ public class Character implements DataElement {
         Stats mementoState = memento.getStats();
         this.attributes = mementoState;
     }
+
+    @Override
+    public String toString() {
+        return "name='" + name + '\'' +
+                ", race=" + race +
+                ", clas=" + clas +
+                ", attributes=" + attributes +
+                ", hp=" + hp;
+    }
 }

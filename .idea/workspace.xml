@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Abstract-Factory-Mathod:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e924bee-6ffc-4c3f-a38f-51362e7e38c1" name="Changes" comment="Commit 1">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Factory/ClassFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Factory/RaceFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GUI/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GUI/DnDFrame.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GUI/DnDFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GUI/Model.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Memento/CareTaker.java" afterDir="false" />
+    <list default="true" id="1e924bee-6ffc-4c3f-a38f-51362e7e38c1" name="Changes" comment="Commit 4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/Demo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/DnDFrame.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/DnDFrame.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/DnDFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/DnDFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/Model.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Memento/CareTaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Memento/CareTaker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/character/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/character/Character.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/character/Stats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/character/Stats.java" afterDir="false" />
     </list>
@@ -51,17 +53,37 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW": "false",
+    "UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW": "true",
     "UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH": "138",
-    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW": "false",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW": "true",
     "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "183",
     "last_opened_file_path": "C:/Users/galex/Downloads/json-simple-1.1.1.jar",
-    "project.structure.last.edited": "Libraries",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="DnDFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GUI.DnDFrame" />
+      <module name="Abstract-Factory-Mathod" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="GUI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.DnDFrame" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -85,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667498593230</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Commit 4">
+      <created>1668812305243</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1668812305243</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -112,6 +141,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit 1" />
+    <MESSAGE value="Commit 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit 4" />
   </component>
 </project>

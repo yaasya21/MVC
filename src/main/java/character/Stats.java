@@ -35,6 +35,10 @@ public class Stats implements DataElement {
         stats.put("charisma", charisma);
     }
 
+    public Stats(HashMap<String, Integer> stats) {
+        this.stats = stats;
+    }
+
     public static Stats generate(CharacterRace bonus) {
         Stats stats = new Stats();
 
@@ -73,4 +77,8 @@ public class Stats implements DataElement {
         this.stats = mementoState.stats;
     }
 
+    @Override
+    public String toString() {
+        return " " + stats;
+    }
 }
